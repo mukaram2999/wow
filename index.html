@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First GitHub Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 { color: #2c3e50; }
+    button {
+      padding: 10px 22px;
+      border: none;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    #msg { color: #27ae60; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello GitHub!</h1>
+    <p>Ye meri pehli HTML file hai jo GitHub par push hui.</p>
+    <button onclick="showMsg()">Click Me</button>
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    function showMsg() {
+      document.getElementById("msg").innerText = "Push successful!";
+    }
+  </script>
+</body>
+</html>
